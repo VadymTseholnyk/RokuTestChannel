@@ -1,4 +1,4 @@
-sub init()
+sub function()
     m.CONFIG_URI = "pkg:/data/config.json"
     m.top.setFocus(true)
 
@@ -9,7 +9,7 @@ sub init()
     m.isDialogOpen = false
     m.currentlyFocused = invalid
     m.top.observeField("focusedChild", "onFocusStateChanged")
-end sub
+end function
 
 function getConfig()
     m.configReader = createObject("roSGNode", "ConfigReader")
