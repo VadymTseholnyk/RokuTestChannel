@@ -1,8 +1,8 @@
-sub init()
+function init()
     m.top.functionName = "getContent"
-end sub
+end function
 
-sub getContent()
+function getContent()
     content = createObject("roSGNode", "ContentNode")
 
     urlTransfer = CreateObject("roUrlTransfer")
@@ -10,4 +10,4 @@ sub getContent()
     content = parseJSON(urlTransfer.GetToString())
 
     m.top.content = content
-end sub
+end function
