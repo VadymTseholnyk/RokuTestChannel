@@ -101,7 +101,6 @@ end function
 
 function removeGrid()
     if (m.grid <> Invalid)
-        removeFilterButtons()
         m.grid.unObserveField("itemSelected")
         m.gridGroup.removeChild(m.grid)
     end if
@@ -129,6 +128,7 @@ function onKeyboardText()
         m.top.searchQuery = m.searchKeyboard.text
     else
         removeGrid()
+	removeFilterButtons()
     end if
 end function
 
