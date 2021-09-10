@@ -1,4 +1,4 @@
-sub function()
+function init()
     m.CONFIG_URI = "pkg:/data/config.json"
     m.top.setFocus(true)
 
