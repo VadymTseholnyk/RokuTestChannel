@@ -1,8 +1,8 @@
-sub init()
+function init()
     m.top.functionName = "getContent"
-end sub
+end function
 
-sub getContent() as Void
+function getContent() as Void
     content = createObject("roSGNode", "ContentNode")
 
     data = m.top.data
@@ -30,7 +30,7 @@ sub getContent() as Void
         end while
     end if
 
-end sub
+end function
 
 function createGridNode(json as Object)
     content = createObject("roSGNode", "ContentNode")
